@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net4.5</TargetFramework>
+    <Platforms>AnyCPU;x86</Platforms>
+    <CelesteFramework Condition="'$(CelesteFramework)' == ''">XNA</CelesteFramework>
+    <TargetFramework Condition="'$(CelesteFramework)' == 'FNA'">net452</TargetFramework>
+    <DefineConstants Condition="'$(CelesteFramework)' == 'FNA'">$(DefineConstants);CELESTE_FNA</DefineConstants>
+    <CelesteGameDir Condition="'$(CelesteGameDir)' == ''">$(MSBuildThisFileDirectory)..\..\..\GAME\Celeste-1</CelesteGameDir>
+    <XnaAssemblyRoot Condition="'$(XnaAssemblyRoot)' == ''">C:\Windows\Microsoft.NET\assembly\GAC_32</XnaAssemblyRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" Condition="'$(CelesteFramework)' == 'FNA'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Celeste">
+      <HintPath>$(CelesteGameDir)\Celeste.exe</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="FNA" Condition="'$(CelesteFramework)' == 'FNA'">
+      <HintPath>$(CelesteGameDir)/FNA.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework" Condition="'$(CelesteFramework)' != 'FNA'">
+      <HintPath>$(XnaAssemblyRoot)\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game" Condition="'$(CelesteFramework)' != 'FNA'">
+      <HintPath>$(XnaAssemblyRoot)\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics" Condition="'$(CelesteFramework)' != 'FNA'">
+      <HintPath>$(XnaAssemblyRoot)\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" Condition="'$(CelesteFramework)' != 'FNA'" />
+  </ItemGroup>
+
+  <Target Name="ValidateCelesteFramework" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(CelesteFramework)' != 'XNA' and '$(CelesteFramework)' != 'FNA'" Text="CelesteFramework must be XNA or FNA." />
+    <Error Condition="!Exists('$(CelesteGameDir)/Celeste.exe')" Text="CelesteGameDir must contain the actual Celeste managed assembly." />
+    <Error Condition="'$(CelesteFramework)' == 'FNA' and !Exists('$(CelesteGameDir)/FNA.dll')" Text="FNA builds require FNA.dll from the selected game." />
+  </Target>
+
+</Project>

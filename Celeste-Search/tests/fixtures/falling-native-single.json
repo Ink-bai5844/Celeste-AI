@@ -1,0 +1,67 @@
+{
+  "source_trace": "artifacts/12-general-exit-fix/live-v2/trace.jsonl",
+  "source_line": 1574,
+  "source_line_sha256": "a0030baec4a5c17b4e3b7bf44685a03f963fb031971c1e34c22bbea3ab600560",
+  "trace_session": "1794553736128819000",
+  "request_id": 1,
+  "action_index": 167,
+  "frame": 540172,
+  "record": {
+    "id": "12:6",
+    "room": "12",
+    "entity_id": 6,
+    "kind": "fallingBlock",
+    "runtime_type": "Celeste.FallingBlock",
+    "map_x": 3520.0,
+    "map_y": -2888.0,
+    "x": 3520.0,
+    "y": -2888.0,
+    "collidable": true,
+    "active": true,
+    "left": 3520.0,
+    "top": -2888.0,
+    "width": 24.0,
+    "height": 40.0,
+    "depth": -9000,
+    "actual_depth": -9000.000026,
+    "update_order": 64,
+    "triggered": false,
+    "fall_delay": 0.0,
+    "has_started_falling": true,
+    "rem_x": 0.0,
+    "rem_y": 0.138889432,
+    "lift_vx": 0.0,
+    "lift_vy": 0.0,
+    "coroutines": [
+      {
+        "active": true,
+        "finished": false,
+        "stack": [
+          {
+            "iterator_type": "Celeste.FallingBlock+<Sequence>d__21",
+            "fields": {
+              "<>1__state": 8,
+              "<maxSpeed>5__3": 160.0,
+              "<speed>5__2": 8.333349,
+              "<timer>5__4": -8.19563866e-07
+            }
+          }
+        ],
+        "wait_timer": -3.57627869e-07
+      }
+    ],
+    "unavailable": [
+      "coroutine_phase"
+    ],
+    "present": true,
+    "retained_observation": false
+  },
+  "predicted": [
+    "12:6",
+    2,
+    0,
+    3520.0,
+    -2887.8611105680466,
+    8.333349227905273
+  ]
+}

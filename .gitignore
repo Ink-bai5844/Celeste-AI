@@ -1,0 +1,48 @@
+# Owned game copies, native game assets and personal saves
+/GAME/
+**/Saves/
+**/Backups/
+
+# Machine-local toolchains and private diagnostics
+/.dev/
+/artifacts/
+/handoff/
+**/outputs/
+**/runs/
+**/runs-*/
+*.log
+
+# Credentials and local settings; checked-in examples remain available
+.env
+.env.*
+!.env.example
+llm_config.json
+*.local.json
+*.pem
+*.key
+
+# Python and build output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+*.egg
+build/
+dist/
+bin/
+obj/
+.vs/
+neat-python/
+*.dll
+*.exe
+*.pdb
+*.dylib
+*.so
+
+# Generated graph and editor/OS files
+Digraph.gv*
+.DS_Store
+._*
+*.swp

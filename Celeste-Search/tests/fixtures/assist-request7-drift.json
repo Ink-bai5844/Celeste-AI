@@ -1,0 +1,110 @@
+{
+  "provenance": {
+    "trace_session": "1794585957794520000",
+    "request_id": 7,
+    "source_line": 8485,
+    "action_index": 523,
+    "note": "Historical pre-fix execution: controller policy regression only; not current physics acceptance."
+  },
+  "route": {
+    "waypoints": [
+      {
+        "room": "02b",
+        "x": 1080,
+        "y": -568,
+        "tile_size": 8,
+        "edge": "top",
+        "transition_to": "03",
+        "arrival_bounds": [
+          1080,
+          -584,
+          1088,
+          -560
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "no_dash": false,
+        "no_ground": false
+      }
+    ]
+  },
+  "expected": {
+    "frame": 501122,
+    "room": "02b",
+    "x": 1044.0,
+    "y": -453,
+    "vx": 0.0,
+    "vy": -69.9999,
+    "dashes": 0,
+    "on_ground": false,
+    "dead": false,
+    "berries": [],
+    "following": [],
+    "mechanisms": [
+      [
+        "02b:14",
+        2,
+        29,
+        1023.5813598632812,
+        -453.488037109375,
+        0.0
+      ],
+      [
+        "02b:2",
+        0,
+        0,
+        824.0,
+        -424.0,
+        0.0
+      ],
+      [
+        "02b:8",
+        4,
+        93,
+        922.7689208984375,
+        -432.6135559082031,
+        0.0
+      ]
+    ]
+  },
+  "observation": {
+    "room": "02b",
+    "x": 1044.0,
+    "y": -442.0,
+    "vx": 0.0,
+    "vy": -69.99988,
+    "on_ground": false,
+    "dead": false,
+    "state": 0,
+    "frame": 9430,
+    "spawn_id": 1,
+    "deaths": 0,
+    "human_input_epoch": 17,
+    "human_input_mask": 0,
+    "human_menu_input": false,
+    "control_mode": "assist"
+  },
+  "next_actions": [
+    0,
+    0,
+    0
+  ],
+  "respawn": {
+    "room": "02b",
+    "x": 768.0,
+    "y": -384.0,
+    "vx": 0.0,
+    "vy": 0.0,
+    "on_ground": true,
+    "dead": false,
+    "frame": 9475,
+    "spawn_id": 2,
+    "deaths": 1,
+    "human_input_epoch": 17,
+    "human_input_mask": 0,
+    "human_menu_input": false,
+    "control_mode": "manual"
+  }
+}

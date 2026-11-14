@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "celeste-offline-search"
+version = "0.1.0"
+description = "Source-guided offline route search and guarded playback for Celeste"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+celeste-search = "celeste_search.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["celeste_search*"]

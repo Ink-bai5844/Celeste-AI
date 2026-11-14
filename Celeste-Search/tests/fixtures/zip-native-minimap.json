@@ -1,0 +1,448 @@
+{
+  "source_trace": "artifacts/bside-02b-mechanics-support/live-v1/trace.jsonl",
+  "session": "1794585957794520000",
+  "request_id": 7,
+  "scope": "display-only native outgoing, target, and returning samples; not route acceptance",
+  "rows": [
+    {
+      "source_index": 0,
+      "source_line": 7961,
+      "observation": {
+        "room": "02b",
+        "frame": 8907,
+        "engine_frame": 10538,
+        "room_entities": {
+          "entities": [
+            {
+              "id": "02b:2",
+              "room": "02b",
+              "entity_id": 2,
+              "kind": "zipMover",
+              "runtime_type": "Celeste.ZipMover",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 824.0,
+              "y": -424.0,
+              "collidable": true,
+              "active": true,
+              "left": 824.0,
+              "top": -424.0,
+              "width": 16.0,
+              "height": 16.0,
+              "depth": -9999,
+              "actual_depth": -9999.000005,
+              "update_order": 39,
+              "percent": 0.0,
+              "target_x": 832.0,
+              "target_y": -472.0,
+              "rem_x": 0.0,
+              "rem_y": 0.0,
+              "lift_vx": 0.0,
+              "lift_vy": 0.0,
+              "coroutines": [
+                {
+                  "active": true,
+                  "finished": false,
+                  "stack": [
+                    {
+                      "iterator_type": "Celeste.ZipMover+<Sequence>d__24",
+                      "fields": {
+                        "<>1__state": 1,
+                        "<at>5__3": 0.0,
+                        "<start>5__2": [
+                          824.0,
+                          -424.0
+                        ]
+                      }
+                    }
+                  ],
+                  "wait_timer": 0.0
+                }
+              ],
+              "unavailable": [
+                "coroutine_phase"
+              ],
+              "present": true,
+              "retained_observation": false
+            },
+            {
+              "id": "02b:3",
+              "room": "02b",
+              "entity_id": 3,
+              "kind": "spikesUp",
+              "runtime_type": "Celeste.Spikes",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 824.0,
+              "y": -424.0,
+              "collidable": true,
+              "active": true,
+              "left": 824.0,
+              "top": -427.0,
+              "width": 16.0,
+              "height": 3.0,
+              "depth": -1,
+              "actual_depth": -1.0000309999999217,
+              "update_order": 21,
+              "unavailable": [],
+              "present": true,
+              "retained_observation": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_index": 65,
+      "source_line": 8026,
+      "observation": {
+        "room": "02b",
+        "frame": 8972,
+        "engine_frame": 10603,
+        "room_entities": {
+          "entities": [
+            {
+              "id": "02b:2",
+              "room": "02b",
+              "entity_id": 2,
+              "kind": "zipMover",
+              "runtime_type": "Celeste.ZipMover",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 826.0,
+              "y": -438.0,
+              "collidable": true,
+              "active": true,
+              "left": 826.0,
+              "top": -438.0,
+              "width": 16.0,
+              "height": 16.0,
+              "depth": -9999,
+              "actual_depth": -9999.000005,
+              "update_order": 39,
+              "percent": 0.292894244,
+              "target_x": 832.0,
+              "target_y": -472.0,
+              "rem_x": 0.343139648,
+              "rem_y": -0.0589294434,
+              "lift_vx": 0.0,
+              "lift_vy": 0.0,
+              "coroutines": [
+                {
+                  "active": true,
+                  "finished": false,
+                  "stack": [
+                    {
+                      "iterator_type": "Celeste.ZipMover+<Sequence>d__24",
+                      "fields": {
+                        "<>1__state": 3,
+                        "<at>5__3": 0.5000009,
+                        "<start>5__2": [
+                          824.0,
+                          -424.0
+                        ]
+                      }
+                    }
+                  ],
+                  "wait_timer": -1.937151e-07
+                }
+              ],
+              "unavailable": [
+                "coroutine_phase"
+              ],
+              "present": true,
+              "retained_observation": false
+            },
+            {
+              "id": "02b:3",
+              "room": "02b",
+              "entity_id": 3,
+              "kind": "spikesUp",
+              "runtime_type": "Celeste.Spikes",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 826.0,
+              "y": -438.0,
+              "collidable": true,
+              "active": true,
+              "left": 826.0,
+              "top": -441.0,
+              "width": 16.0,
+              "height": 3.0,
+              "depth": -1,
+              "actual_depth": -1.0000309999999217,
+              "update_order": 21,
+              "unavailable": [],
+              "present": true,
+              "retained_observation": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_index": 92,
+      "source_line": 8053,
+      "observation": {
+        "room": "02b",
+        "frame": 8999,
+        "engine_frame": 10633,
+        "room_entities": {
+          "entities": [
+            {
+              "id": "02b:2",
+              "room": "02b",
+              "entity_id": 2,
+              "kind": "zipMover",
+              "runtime_type": "Celeste.ZipMover",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 832.0,
+              "y": -472.0,
+              "collidable": true,
+              "active": true,
+              "left": 832.0,
+              "top": -472.0,
+              "width": 16.0,
+              "height": 16.0,
+              "depth": -9999,
+              "actual_depth": -9999.000005,
+              "update_order": 42,
+              "percent": 1.0,
+              "target_x": 832.0,
+              "target_y": -472.0,
+              "rem_x": 0.0,
+              "rem_y": 0.0,
+              "lift_vx": 0.0,
+              "lift_vy": 0.0,
+              "coroutines": [
+                {
+                  "active": true,
+                  "finished": false,
+                  "stack": [
+                    {
+                      "iterator_type": "Celeste.ZipMover+<Sequence>d__24",
+                      "fields": {
+                        "<>1__state": 4,
+                        "<at>5__3": 1.0,
+                        "<start>5__2": [
+                          824.0,
+                          -424.0
+                        ]
+                      }
+                    }
+                  ],
+                  "wait_timer": 0.299999475
+                }
+              ],
+              "unavailable": [
+                "coroutine_phase"
+              ],
+              "present": true,
+              "retained_observation": false
+            },
+            {
+              "id": "02b:3",
+              "room": "02b",
+              "entity_id": 3,
+              "kind": "spikesUp",
+              "runtime_type": "Celeste.Spikes",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 832.0,
+              "y": -472.0,
+              "collidable": true,
+              "active": true,
+              "left": 832.0,
+              "top": -475.0,
+              "width": 16.0,
+              "height": 3.0,
+              "depth": -1,
+              "actual_depth": -1.0000309999999217,
+              "update_order": 23,
+              "unavailable": [],
+              "present": true,
+              "retained_observation": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_index": 135,
+      "source_line": 8096,
+      "observation": {
+        "room": "02b",
+        "frame": 9042,
+        "engine_frame": 10676,
+        "room_entities": {
+          "entities": [
+            {
+              "id": "02b:2",
+              "room": "02b",
+              "entity_id": 2,
+              "kind": "zipMover",
+              "runtime_type": "Celeste.ZipMover",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 832.0,
+              "y": -470.0,
+              "collidable": true,
+              "active": true,
+              "left": 832.0,
+              "top": -470.0,
+              "width": 16.0,
+              "height": 16.0,
+              "depth": -9999,
+              "actual_depth": -9999.000005,
+              "update_order": 42,
+              "percent": 0.9510563,
+              "target_x": 832.0,
+              "target_y": -472.0,
+              "rem_x": -0.391540527,
+              "rem_y": 0.3493042,
+              "lift_vx": 0.0,
+              "lift_vy": 0.0,
+              "coroutines": [
+                {
+                  "active": true,
+                  "finished": false,
+                  "stack": [
+                    {
+                      "iterator_type": "Celeste.ZipMover+<Sequence>d__24",
+                      "fields": {
+                        "<>1__state": 5,
+                        "<at>5__3": 0.20000042,
+                        "<start>5__2": [
+                          824.0,
+                          -424.0
+                        ]
+                      }
+                    }
+                  ],
+                  "wait_timer": -1.08778477e-06
+                }
+              ],
+              "unavailable": [
+                "coroutine_phase"
+              ],
+              "present": true,
+              "retained_observation": false
+            },
+            {
+              "id": "02b:3",
+              "room": "02b",
+              "entity_id": 3,
+              "kind": "spikesUp",
+              "runtime_type": "Celeste.Spikes",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 832.0,
+              "y": -470.0,
+              "collidable": true,
+              "active": true,
+              "left": 832.0,
+              "top": -473.0,
+              "width": 16.0,
+              "height": 3.0,
+              "depth": -1,
+              "actual_depth": -1.0000309999999217,
+              "update_order": 24,
+              "unavailable": [],
+              "present": true,
+              "retained_observation": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_index": 200,
+      "source_line": 8161,
+      "observation": {
+        "room": "02b",
+        "frame": 9107,
+        "engine_frame": 10741,
+        "room_entities": {
+          "entities": [
+            {
+              "id": "02b:2",
+              "room": "02b",
+              "entity_id": 2,
+              "kind": "zipMover",
+              "runtime_type": "Celeste.ZipMover",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 827.0,
+              "y": -443.0,
+              "collidable": true,
+              "active": true,
+              "left": 827.0,
+              "top": -443.0,
+              "width": 16.0,
+              "height": 16.0,
+              "depth": -9999,
+              "actual_depth": -9999.000005,
+              "update_order": 40,
+              "percent": 0.3947425,
+              "target_x": 832.0,
+              "target_y": -472.0,
+              "rem_x": 0.157958984,
+              "rem_y": 0.0523681641,
+              "lift_vx": 0.0,
+              "lift_vy": 0.0,
+              "coroutines": [
+                {
+                  "active": true,
+                  "finished": false,
+                  "stack": [
+                    {
+                      "iterator_type": "Celeste.ZipMover+<Sequence>d__24",
+                      "fields": {
+                        "<>1__state": 5,
+                        "<at>5__3": 0.7416676,
+                        "<start>5__2": [
+                          824.0,
+                          -424.0
+                        ]
+                      }
+                    }
+                  ],
+                  "wait_timer": -1.08778477e-06
+                }
+              ],
+              "unavailable": [
+                "coroutine_phase"
+              ],
+              "present": true,
+              "retained_observation": false
+            },
+            {
+              "id": "02b:3",
+              "room": "02b",
+              "entity_id": 3,
+              "kind": "spikesUp",
+              "runtime_type": "Celeste.Spikes",
+              "map_x": 824.0,
+              "map_y": -424.0,
+              "x": 827.0,
+              "y": -443.0,
+              "collidable": true,
+              "active": true,
+              "left": 827.0,
+              "top": -446.0,
+              "width": 16.0,
+              "height": 3.0,
+              "depth": -1,
+              "actual_depth": -1.0000309999999217,
+              "update_order": 22,
+              "unavailable": [],
+              "present": true,
+              "retained_observation": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

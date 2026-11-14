@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants Condition="'$(TestFnaJson)' == 'true'">$(DefineConstants);CELESTE_FNA</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="ModelStateTests.cs" />
+    <Compile Include="EnvironmentStateTests.cs" />
+    <Compile Include="AssistInputTests.cs" />
+    <Compile Include="FnaJsonCompatibilityTests.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/AssistInputState.cs" Link="AssistInputState.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/Socket.cs" Link="Socket.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/InputsManager.cs" Link="InputsManager.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/SearchModelState.cs" Link="SearchModelState.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/SearchEnvironmentState.cs" Link="SearchEnvironmentState.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/DialogueAdvancePulse.cs" Link="DialogueAdvancePulse.cs" />
+    <Compile Include="../../CelesteInstrumentation/Instrumentation/FnaJsonCompatibility.cs" Link="FnaJsonCompatibility.cs" Condition="'$(TestFnaJson)' == 'true'" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TestFnaJson)' == 'true'">
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

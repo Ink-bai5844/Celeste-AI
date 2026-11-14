@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GlobalParameters>
+  <Enabled>true</Enabled>
+  <DebugRendering>false</DebugRendering>
+  <RouteRendering>true</RouteRendering>
+  <GamespeedMultiplier>4</GamespeedMultiplier>
+  <Headless>true</Headless>
+  <ConnectionIP>127.0.0.1</ConnectionIP>
+  <ConnectionPort>25001</ConnectionPort>
+</GlobalParameters>

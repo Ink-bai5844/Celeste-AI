@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "api_key": "sk-your-api-key-here",
+  "model": "gpt-4o-mini",
+  "base_url": "https://api.openai.com/v1",
+  "wire_api": "chat_completions",
+  "failure_threshold": 5,
+  "timeout": 120,
+  "display_plans": true,
+  "max_tokens": 4096,
+  "retries": 1,
+  "retry_delay": 2,
+  "thinking_enabled": null,
+  "thinking_effort": "high",
+  "response_format": true
+}
